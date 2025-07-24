@@ -32,27 +32,27 @@
     />
     <title>Flower_Web</title>
   </head>
-  <body>
+  <body class="bg-[#c8c8c831]">
     <!-- navber -->
-    <nav class="flex justify-between items-baseline max-w-6/7 m-auto pt-4">
-      <img class="w-20" src="./assets/logo.png" alt="" />
-      <ul class="hidden">
-        <li>Home</li>
+    <nav class="flex justify-between items-baseline max-w-6/7 m-auto pt-4 lg:max-w-[86%] lg:m-auto lg:items-center lg:mt-4 ">
+      <img class="w-20 lg:w-34 " src="./assets/logo.png" alt="" />
+      <div class="cart flex gap-3 lg:gap-10 ">
+         <ul class="hidden lg:block lg:flex lg:gap-8 lg:text-[rgba(0,0,0,0.53)]">
+        <li class="font-bold text-black">Home</li>
         <li>Shop</li>
         <li>About Us</li>
       </ul>
-      <div class="cart flex gap-3">
         <img class="w-6" src="./assets/shopping-cart.png" alt="" />
         <p>Cart ($56)</p>
       </div>
     </nav>
 
     <!-- banner section -->
-    <section class="bannner mt-9 flex flex-col">
-      <img src="./assets/hero-flower.png" alt="" />
+    <section class="bannner mt-9 flex flex-col lg:flex-row-reverse lg:max-w-[90%] lg:m-auto  lg:mt-27 lg:items-center ">
+      <img class="" src="./assets/hero-flower.png" alt="" />
 
-      <div class="banner_info p-5">
-        <p class="font-[noto] text-3xl font-bold">
+      <div class="banner_info p-5 lg:max-w-[55%] lg:mt-25 ">
+        <p class="font-[noto] text-3xl font-bold lg:text-5xl lg:mb-7 lg:leading-16">
           ALWAYS
           <span class="text-[rgba(233,90,8,1)]">FRESH <br />FLOWERS</span>
         </p>
@@ -65,7 +65,7 @@
     </section>
 
     <!--Plant section  -->
-    <section class="plant max-w-11/12 m-auto mt-6.5 mb-9">
+    <section class="plant max-w-[93%] m-auto mt-6.5 mb-9">
       <div class="plant_heading text-center">
         <p class="font-[noto] text-2xl font-bold mb-2.5">
           <span class="text-[rgba(233,90,8,1)]">Our</span> Plants
@@ -181,8 +181,10 @@
           From vibrant petals to soothing aromas, each flower speaks beauty.
         </p>
       </div>
-      <div class="deal_card flex flex-col gap-5">
-        <div class="card h-50 rounded-lg bg-[url('./assets/deal-bloom.png')]">
+      <div class="deal_card flex flex-col gap-5 ">
+        <div
+          class="card h-50 rounded-lg   bg-[url('./assets/deal-bloom.png')] bg-cover   " 
+        >
           <div class="card_info text-center text-white font-[noto] pt-[18%]">
             <p class="text-xl font-bold">60% Off | Bloom Plant</p>
             <p
@@ -192,7 +194,9 @@
             </p>
           </div>
         </div>
-        <div class="card h-50 rounded-lg bg-[url('./assets/deal-ana.png')]">
+        <div
+          class="card h-50 rounded-lg bg-[url('./assets/deal-ana.png')] bg-cover"
+        >
           <div class="card_info text-center text-white font-[noto] pt-[18%]">
             <p class="text-xl font-bold">30% Off | Ana Plant</p>
             <p
@@ -202,7 +206,9 @@
             </p>
           </div>
         </div>
-        <div class="card h-50 rounded-lg bg-[url('./assets/deal-zabo.png')]">
+        <div
+          class="card h-50 rounded-lg bg-[url('./assets/deal-zabo.png')] bg-cover"
+        >
           <div class="card_info text-center text-white font-[noto] pt-[18%]">
             <p class="text-xl font-bold">90% Off | Zabo Plant</p>
             <p
@@ -217,7 +223,7 @@
 
     <!-- join section -->
     <section
-      class="join max-w-full h-64 bg-[url('./assets/news-letter-bg.png')] mb-20 bg-no-repeat bg-cover"
+      class="join max-w-full h-64 bg-[url('./assets/news-letter-bg.png')] mb-20 bg-no-repeat bg-cover bg-gradient-to-b from-pink-600 to-blue-400 bg-blend-overlay"
     >
       <p class="font-[noto] text-2xl text-white text-center pt-[20%] mb-3">
         Join the colorful Bunch
@@ -240,12 +246,17 @@
     </section>
 
     <!-- footer section -->
-    <footer class="flex flex-col text-lg font-[inter] text-[rgba(0,0,0,0.53)] max-w-[87%] m-auto ">
-      <div class="foot_logo_info ">
+    <footer
+      class="flex flex-col text-lg font-[inter] text-[rgba(0,0,0,0.53)] max-w-[87%] m-auto"
+    >
+      <div class="foot_logo_info">
         <img class="w-43 mb-4" src="./assets/logo.png" alt="" />
-        <p>Let the freshness of nature bloom in your life. From vibrant colors to soothing scents, our flowers uplift every precious moment beautifully.</p>
+        <p>
+          Let the freshness of nature bloom in your life. From vibrant colors to
+          soothing scents, our flowers uplift every precious moment beautifully.
+        </p>
       </div>
-      <div class="foot_list mt-9  ">
+      <div class="foot_list mt-9">
         <ul class="space-y-5">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
