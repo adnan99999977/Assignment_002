@@ -30,6 +30,7 @@
       href="./assets/icons8-flower-bouquet-pastel-color-96.png"
       type="image/png"
     />
+    <link rel="stylesheet" href="style.css">
     <title>Flower_Web</title>
   </head>
   <body class="bg-[#c8c8c831]">
@@ -44,8 +45,8 @@
           <li>Shop</li>
           <li>About Us</li>
         </ul>
-        <img class="w-6" src="./assets/shopping-cart.png" alt="" />
-        <p>Cart ($56)</p>
+        <img class="w-6 font-bold " src="./assets/shopping-cart.png" alt="" />
+        <p class="font-bold">Cart ($56)</p>
       </div>
     </nav>
 
@@ -71,7 +72,7 @@
     </section>
 
     <!--Plant section  -->
-    <section class="plant max-w-[93%] m-auto mt-6.5 mb-9 lg:mt-30">
+    <section class="plant max-w-[93%] mt-6.5 mb-9  m-auto lg:mt-30 lg:ml-13">
       <div class="plant_heading text-center lg:mb-15">
         <p class="font-[noto] text-2xl font-bold mb-2.5 lg:text-4xl">
           <span class="text-[rgba(233,90,8,1)]">Our</span> Plants
@@ -84,9 +85,9 @@
         </p>
       </div>
       <div
-        class="plant_cards max-w-[95%] text-center grid grid-cols-2 gap-8 mb-20 lg:grid-cols-4 justify-items-center lg:m-auto lg:mb-40"
+        class="plant_cards max-w-[90%] m-auto text-center grid grid-cols-2 gap-10 mb-20 lg:grid-cols-4 justify-items-center lg:m-auto lg:mb-60 "
       >
-        <div class="card font-[inter] w-44 lg:w-65">
+        <div class="card font-[inter] w-44 lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -96,7 +97,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="card font-[inter] w-44 lg:w-65">
+        <div class="card font-[inter] w-44 lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -106,7 +107,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="card font-[inter] w-44 lg:w-65">
+        <div class="card font-[inter] w-44 lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -116,7 +117,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="card font-[inter] w-44 lg:w-65">
+        <div class="card font-[inter] w-44 lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -126,7 +127,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="card font-[inter] w-44 lg:w-65">
+        <div class="card font-[inter] w-44 lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -136,7 +137,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="card font-[inter] w-44 lg:w-65">
+        <div class="card font-[inter] w-44 lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -146,7 +147,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="hidden card font-[inter] w-44 lg:block lg:w-65">
+        <div class="hidden card font-[inter] w-44 lg:block lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -156,7 +157,7 @@
             ADD TO CART
           </button>
         </div>
-        <div class="hidden card font-[inter] w-44 lg:block lg:w-65">
+        <div class="hidden card font-[inter] w-44 lg:block lg:w-65 lg:space-y-3">
           <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
           <p class="text-lg font-semibold">Lily Blossom</p>
           <p class="text-lg font-bold">20 USD</p>
@@ -176,7 +177,7 @@
     >
       <img class="w-full lg:w-[37%]" src="./assets/flower-store.png" alt="" />
       <img
-        class="hidden lg:block lg:absolute lg:w-50 lg:left-[320px] lg:top-[-80px] lg:animate-spin lg:duration-[9000ms] lg:animate-infinite"
+        class="hidden lg:block lg:absolute lg:w-50 lg:left-[335px] lg:top-[-90px] lg:animate-spin lg:duration-[9000ms] lg:animate-infinite drop-shadow-xl "
         src="./assets/trusted-badge.png"
         alt=""
       />
@@ -219,38 +220,40 @@
           From vibrant petals to soothing aromas, each flower speaks beauty.
         </p>
       </div>
-      <div class="deal_card flex flex-col gap-5 lg:grid grid-cols-3">
+      <div class="deal_card flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-col  ">
+
+
         <div
-          class="card h-50 rounded-lg bg-[url('./assets/deal-bloom.png')] bg-cover"
+          class="card_1 h-50 rounded-lg bg-gray-400 bg-[url('./assets/deal-bloom.png')] bg-cover bg-blend-darken brightness-90 "
         >
-          <div class="card_info text-center text-white font-[noto] pt-[18%]">
-            <p class="text-xl font-bold">60% Off | Bloom Plant</p>
+          <div class="card_info text-center text-white font-[noto] pt-[18%] ">
+            <p class="text-xl font-bold lg:text-2xl">60% Off | Bloom Plant</p>
             <p
-              class="text-lg font-semibold w-20 mt-2 m-auto border-b-white border-b-2"
+              class="text-lg font-semibold w-20 mt-2 m-auto border-b-white border-b-2 lg:text-xl lg:w-25"
             >
               Shop Now
             </p>
           </div>
         </div>
         <div
-          class="card h-50 rounded-lg bg-[url('./assets/deal-ana.png')] bg-cover"
+          class="card_2 h-50 rounded-lg bg-gray-400 bg-[url('./assets/deal-ana.png')] bg-cover bg-blend-darken  brightness-90 "
         >
           <div class="card_info text-center text-white font-[noto] pt-[18%]">
-            <p class="text-xl font-bold">30% Off | Ana Plant</p>
+            <p class="text-xl font-bold lg:text-2xl">30% Off | Ana Plant</p>
             <p
-              class="text-lg font-semibold w-20 mt-2 m-auto border-b-white border-b-2"
+              class="text-lg font-semibold w-20 mt-2 m-auto border-b-white border-b-2 lg:text-xl lg:w-25"
             >
               Shop Now
             </p>
           </div>
         </div>
         <div
-          class="card h-50 rounded-lg bg-[url('./assets/deal-zabo.png')] bg-cover"
+          class="card_3 h-50 rounded-lg bg-gray-300  bg-[url('./assets/deal-zabo.png')] bg-cover bg-blend-darken lg:brightness-80 lg:row-span-2 lg:col-span-2 lg:h-[420px]"
         >
-          <div class="card_info text-center text-white font-[noto] pt-[18%]">
-            <p class="text-xl font-bold">90% Off | Zabo Plant</p>
+          <div class="card_info text-center text-white font-[noto] pt-[18%] lg:mt-7 ">
+            <p class="text-xl font-bold lg:text-5xl">90% Off | Zabo Plant</p>
             <p
-              class="text-lg font-semibold w-20 mt-2 m-auto border-b-white border-b-2"
+              class="text-lg font-semibold w-20 mt-2 m-auto border-b-white border-b-2 lg:text-3xl lg:w-40"
             >
               Shop Now
             </p>
